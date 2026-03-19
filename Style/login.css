@@ -1,0 +1,16 @@
+h1{
+    margin-top: 120px;
+}
+.login-wrapper{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    text-align: center;
+}
+button.btn-blue{
+    margin: 15px 0px;
+}
