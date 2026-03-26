@@ -8,15 +8,38 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(236, 234, 234);
 }
+ img{
+ margin-top: 0px;
+  font-size: 10px;
+ text-align: center;
+  
+  
+ 
+}
+
+.container{
+    
+    flex-direction: row;
+}
+span{
+color: rgb(11, 95, 173);
+}
 section.card-center{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 12px 1px gray;
-    background-color: white;
-    width: 520px;
+    background-color: rgba(255, 255, 255, 0.993);
+    width: 405px;
     height: 75%;
-    padding: 0px 40px;
+    padding: 0px 30px;
     border-radius: 12px;
+}
+section.login{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    transform: translate(-50%, 0%);
+    
 }
 div.input-group{
     display: flex;
@@ -24,7 +47,7 @@ div.input-group{
     gap: 8px;
 }
 div.input-group > label{
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 500;
     text-align: left;
 }
@@ -35,6 +58,19 @@ div.input-group > input[type="password"]{
     border-radius: 18px;
     border: 1px solid rgb(147, 145, 145);
 }
+input{
+    padding: 10px;
+    font-size: 16px;
+}
+input:focus::placeholder{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+input::placeholder{
+    opacity: 1;
+    transform: opacity 0.5s;
+}
 button.btn-blue{
     background-color: rgb(6, 121, 230);
     color: white;
@@ -43,3 +79,17 @@ button.btn-blue{
     border: none;
     width: 100%;
 }
+.container{
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    
+}
+@media (max-width: 480px){
+    .container{
+      margin: 20px;
+        padding: 10px;
+    }
+}
+
+
