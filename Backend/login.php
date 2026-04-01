@@ -2,11 +2,11 @@
 require 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $telefone = $_POST['telefone'];
+    $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $stmt = $db->prepare("SELECT * FROM usuarios WHERE telefone = :telefone");
-    $stmt->bindValue(':telefone', $telefone);
+    $stmt = $db->prepare("SELECT * FROM usuarios WHERE email = :email");
+    $stmt->bindValue(':email', $email);
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
