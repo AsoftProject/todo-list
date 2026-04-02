@@ -8,21 +8,17 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(236, 234, 234);
 }
- img{
- margin-top: 0px;
-  font-size: 10px;
- text-align: center;
-  
-  
- 
+header{
+    background-color: white;
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.container{
-    
-    flex-direction: row;
-}
-span{
-color: rgb(11, 95, 173);
+header > nav{
+    display: flex;
+    gap:10px
 }
 section.card-center{
     display: flex;
@@ -53,23 +49,15 @@ div.input-group > label{
 }
 div.input-group > input[type="text"],
 div.input-group > input[type="email"],
-div.input-group > input[type="password"]{
+div.input-group > input[type="password"],
+div.input-group > input[type="date"],
+textarea{
     padding: 18px;
     border-radius: 18px;
     border: 1px solid rgb(147, 145, 145);
 }
-input{
-    padding: 10px;
-    font-size: 16px;
-}
-input:focus::placeholder{
-    opacity: 0;
-    transition: 0.5s;
-}
-
-input::placeholder{
-    opacity: 1;
-    transform: opacity 0.5s;
+textarea{
+    resize: vertical;
 }
 button.btn-blue{
     background-color: rgb(6, 121, 230);
